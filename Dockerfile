@@ -3,7 +3,7 @@ FROM alpine:latest
 WORKDIR /pb
 
 RUN apk add --no-cache ca-certificates unzip wget \
-    && wget -O pocketbase.zip https://github.com/pocketbase/pocketbase/releases/download/v0.22.18/pocketbase_linux_amd64.zip \
+    && wget -O pocketbase.zip https://github.com/pocketbase/pocketbase/releases/latest/download/pocketbase_linux_amd64.zip \
     && unzip pocketbase.zip \
     && rm pocketbase.zip \
     && chmod +x pocketbase
